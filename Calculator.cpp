@@ -64,14 +64,21 @@ int main() {
 			cout << "Write 2 numbers: ";
 			cin >> value_double_1 >> value_double_2;
 
-			if (value_double_1 == 0 || value_double_2 == 0) {
-				cout << "Sorry, division by 0 is not possible";
+			if (value_double_2 == 0) {
+				cout << "Sorry, division by 0 is not possible" << endl;
+				break;
 			}
+			else if (value_double_1 == 0) {
+				cout << "Result: " << 0 << endl;
+				break;
+			}
+			else {
 				sum = value_double_1 / value_double_2;
 
-			cout << "Result: "  << sum  << endl;
-			break;
-
+				cout << "Result: " << sum << endl;
+			}
+				break;
+			
 		case 5:
 			sum = 0;
 
